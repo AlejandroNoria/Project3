@@ -1,0 +1,67 @@
+.navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    height: var(--navbar-height);
+    width: 100%;
+
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10rem;
+
+    color: #fff;
+
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.navbar a:hover {
+    opacity: .7;
+}
+
+.navbar__brand {
+    font-size: 2.2rem;
+}
+
+.navbar__cart {
+    margin-left: 2.5rem;
+}
+
+.navbar__cart a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar__cart span {
+    font-weight: 600;
+    background-color: white;
+    color: var(--primary);
+
+    display: block;
+    height: 3.2rem;
+    width: 3.2rem;
+
+    line-height: 3.2rem;
+    text-align: center;
+
+    border-radius: 50%;
+
+    margin-left: 1rem;
+}
+
+.navbar__user {
+    display: flex;
+    align-items: center;
+}

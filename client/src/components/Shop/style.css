@@ -1,0 +1,21 @@
+.shop {
+    padding: 10rem;
+    background-color: rgb(250, 250, 250);
+}
+
+.shop__message {
+
+    min-height: calc(100vh - var(--navbar-height));
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shop__results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 5rem;
+}

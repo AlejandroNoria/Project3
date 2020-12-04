@@ -43,13 +43,12 @@ const findItem = async (id)=> {
     return data;
 }
 
-exports.get = catchAsync(async (req,res) => {
-    const user = await User.findById(req.user._id).populate('cart.item');
+exports.get = (req,res) => {
     res.json({
         status:"Success",
-        data: user.cart
+        data:req.user.cart
     })
-});
+}
 
 exports.add = catchAsync(async (req,res) => {
     const data = await findItem(req.body.item)
@@ -84,8 +83,7 @@ exports.add = catchAsync(async (req,res) => {
 })
 
 exports.delete = catchAsync(async (req,res) => {
-    console.log(req.body);
-    const data = await findItem(req.body.item);
+    const data = await findItem(req.body.item)
     if(data.message)return res.json({
         status:"fail",
         message:data.message

@@ -1,0 +1,17 @@
+.btn {
+
+    display: block;
+    width: max-content;
+
+    border: none;
+
+    padding: 1rem 2rem;
+
+    border-radius: .7rem;
+
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+
+}
